@@ -1,0 +1,152 @@
+/* Variáveis globais do projeto Gigantes do Brasil */
+/*
+    Utilizamos rem nos tamanhos das fontes porque essa unidade
+    respeita o tamanho de fonte definido no elemento raiz,
+    facilitando a acessibilidade e a manutenção do projeto.
+*/
+:root {
+    --cor-primaria: #146b3a;
+    --cor-secundaria: #f4c542;
+    --cor-fundo: #f5f7f5;
+    --cor-texto: #222222;
+    --cor-branca: #ffffff;
+
+    --espacamento-padrao: 1rem;
+    --raio-borda: 0.5rem;
+}
+/* Estilização básica da página */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+/* Cabeçalho principal do site */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    border-bottom: 0.4rem solid var(--cor-secundaria);
+}
+/*
+    Combinador descendente:
+    Usamos "header h1" para estilizar somente o título
+    que está dentro do cabeçalho, sem afetar outros títulos.
+*/
+header h1 {
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 0.5rem;
+}
+/* Estiliza apenas o parágrafo dentro do cabeçalho */
+header p {
+    font-size: 1.1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Estilização das seções do conteúdo */
+section {
+    background-color: var(--cor-branca);
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 70rem;
+
+    border: 0.1rem solid #dddddd;
+    border-radius: var(--raio-borda);
+}
+/* Títulos das seções */
+section h2 {
+    color: var(--cor-primaria);
+    font-size: 1.6rem;
+    border-bottom: 0.15rem solid var(--cor-secundaria);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+/* Estados dos links na ordem LoVe/HAte */
+
+/* Link ainda não visitado */
+a:link {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+/* Link já visitado */
+a:visited {
+    color: #6a3d8a;
+}
+
+/* Mouse sobre o link */
+a:hover {
+    color: #b8860b;
+    text-decoration: underline;
+}
+
+/* Link durante o clique */
+a:active {
+    color: #c8102e;
+}
+/* Estilização das listas */
+section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+section li {
+    padding: 0.3rem 0;
+}
+/* Estilização da tabela de títulos mundiais */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+th, td {
+    border: 0.1rem solid #dddddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-fundo);
+}
+/* Seletor de ID: identifica exclusivamente o cabeçalho principal */
+#cabecalho-principal {
+    border-top: 0.3rem solid var(--cor-secundaria);
+}
+/* Classe reutilizável para destacar informações */
+.destaque {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: var(--espacamento-padrao);
+    border-radius: var(--raio-borda);
+    font-weight: bold;
+}
+/* Classe reutilizável para cartões de conteúdo */
+/* Classe reutilizável para cartões de conteúdo */
+.card {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+/* Classe reutilizável para botões e links de ação */
+.botao {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 0.7rem 1.2rem;
+    border: 0.1rem solid var(--cor-primaria);
+    border-radius: var(--raio-borda);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
