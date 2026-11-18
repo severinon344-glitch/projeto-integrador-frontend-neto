@@ -21,6 +21,33 @@
         <section>
             <h2>Clubes históricos do futebol brasileiro</h2>
 
+            <!--
+    Teste de responsividade do SVG:
+    O troféu foi testado com diferentes níveis de zoom no navegador
+    e permaneceu nítido, sem apresentar pixelização.
+-->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="80" height="80"
+         viewBox="0 0 100 100"
+         role="img"
+         aria-labelledby="titulo-trofeu">
+
+        <title id="titulo-trofeu">Troféu de campeão</title>
+
+        <path d="M30 20 H70 V50 Q70 70 50 70 Q30 70 30 50 Z"
+              fill="gold" stroke="#8B6914" stroke-width="3"/>
+
+        <path d="M30 28 H15 V40 Q15 55 35 55"
+              fill="none" stroke="gold" stroke-width="7"/>
+
+        <path d="M70 28 H85 V40 Q85 55 65 55"
+              fill="none" stroke="gold" stroke-width="7"/>
+
+        <rect x="45" y="70" width="10" height="12" fill="#8B6914"/>
+        <rect x="30" y="82" width="40" height="8" rx="2" fill="gold"/>
+    </svg>
+
+
             <ul>
                 <li>Flamengo</li>
                 <li>Palmeiras</li>
@@ -74,6 +101,15 @@
                     </tr>
                 </tbody>
             </table>
+
+<h3>Gráfico de títulos mundiais por clube</h3>
+
+<canvas id="graficoTitulos" width="600" height="350">
+    Gráfico de barras com os títulos mundiais:
+    São Paulo (3), Santos (2), Corinthians (2),
+    Flamengo (1), Grêmio (1) e Internacional (1).
+</canvas>
+
         </section>
 
         <section>
@@ -169,6 +205,6 @@
 
         <p>Gigantes do Brasil — Projeto Integrador</p>
     </footer>
-
+    <script src="js/grafico.js"></script>
 </body>
 </html>
