@@ -1,0 +1,12 @@
+/* Aplica o box-sizing a todos os elementos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove os espaçamentos padrão do navegador */
+body {
+    margin: 0;
+    padding: 0;
+}
