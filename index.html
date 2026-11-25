@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gigantes do Brasil</title>
     <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header id="cabecalho-principal">
@@ -16,11 +17,19 @@
             Conheça os clubes brasileiros com mais títulos oficiais
             e descubra suas principais conquistas ao longo da história.
         </p>
+        <nav aria-label="Navegação principal">
+            <ul class="menu-navegacao">
+                <li><a href="#cabecalho-principal">Início</a></li>
+                <li><a href="#clubes">Clubes</a></li>
+                <li><a href="#mundiais">Mundiais</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-        <section class="card">
+        <section id="clubes" class="card">
             <h2>Clubes históricos do futebol brasileiro</h2>
 
             <!--
@@ -28,29 +37,23 @@
     O troféu foi testado com diferentes níveis de zoom no navegador
     e permaneceu nítido, sem apresentar pixelização.
 -->
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="80" height="80"
-         viewBox="0 0 100 100"
-         role="img"
-         aria-labelledby="titulo-trofeu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100" role="img"
+                aria-labelledby="titulo-trofeu">
 
-        <title id="titulo-trofeu">Troféu de campeão</title>
+                <title id="titulo-trofeu">Troféu de campeão</title>
 
-        <path d="M30 20 H70 V50 Q70 70 50 70 Q30 70 30 50 Z"
-              fill="gold" stroke="#8B6914" stroke-width="3"/>
+                <path d="M30 20 H70 V50 Q70 70 50 70 Q30 70 30 50 Z" fill="gold" stroke="#8B6914" stroke-width="3" />
 
-        <path d="M30 28 H15 V40 Q15 55 35 55"
-              fill="none" stroke="gold" stroke-width="7"/>
+                <path d="M30 28 H15 V40 Q15 55 35 55" fill="none" stroke="gold" stroke-width="7" />
 
-        <path d="M70 28 H85 V40 Q85 55 65 55"
-              fill="none" stroke="gold" stroke-width="7"/>
+                <path d="M70 28 H85 V40 Q85 55 65 55" fill="none" stroke="gold" stroke-width="7" />
 
-        <rect x="45" y="70" width="10" height="12" fill="#8B6914"/>
-        <rect x="30" y="82" width="40" height="8" rx="2" fill="gold"/>
-    </svg>
+                <rect x="45" y="70" width="10" height="12" fill="#8B6914" />
+                <rect x="30" y="82" width="40" height="8" rx="2" fill="gold" />
+            </svg>
 
 
-            <ul>
+            <ul class="grade-clubes">
                 <li>Flamengo</li>
                 <li>Palmeiras</li>
                 <li>São Paulo</li>
@@ -59,7 +62,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="mundiais">
             <h2>Clubes brasileiros campeões mundiais</h2>
 
             <table border="1">
@@ -104,13 +107,13 @@
                 </tbody>
             </table>
 
-<h3>Gráfico de títulos mundiais por clube</h3>
+            <h3>Gráfico de títulos mundiais por clube</h3>
 
-<canvas id="graficoTitulos" width="600" height="350">
-    Gráfico de barras com os títulos mundiais:
-    São Paulo (3), Santos (2), Corinthians (2),
-    Flamengo (1), Grêmio (1) e Internacional (1).
-</canvas>
+            <canvas id="graficoTitulos" width="600" height="350">
+                Gráfico de barras com os títulos mundiais:
+                São Paulo (3), Santos (2), Corinthians (2),
+                Flamengo (1), Grêmio (1) e Internacional (1).
+            </canvas>
 
         </section>
 
@@ -118,19 +121,18 @@
             <h2>Corinthians campeão mundial de 2012</h2>
 
             <img src="assets/images/Corinthians_Club_World_Cup_2012.jpg"
-                 alt="Equipe do Corinthians comemorando a conquista do Mundial de Clubes de 2012">
+                alt="Equipe do Corinthians comemorando a conquista do Mundial de Clubes de 2012">
 
             <p>
                 Imagem: Tomofumi Kitano,
-                <a href="https://commons.wikimedia.org/wiki/File:Corinthians_Club_World_Cup_2012.jpg"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a href="https://commons.wikimedia.org/wiki/File:Corinthians_Club_World_Cup_2012.jpg" target="_blank"
+                    rel="noopener noreferrer">
                     Wikimedia Commons
                 </a>.
             </p>
         </section>
 
-        <section>
+        <section id="contato">
             <h2>Pesquisa sobre futebol brasileiro</h2>
 
             <p>
@@ -144,26 +146,22 @@
 
                     <p>
                         <label for="nome">Seu nome:</label>
-                        <input type="text" id="nome" name="nome"
-                               required minlength="2">
+                        <input type="text" id="nome" name="nome" required minlength="2">
                     </p>
 
                     <p>
                         <label for="email">Seu e-mail:</label>
-                        <input type="email" id="email" name="email"
-                               required>
+                        <input type="email" id="email" name="email" required>
                     </p>
 
                     <p>
                         <label for="clube">Seu clube favorito:</label>
-                        <input type="text" id="clube" name="clube"
-                               required>
+                        <input type="text" id="clube" name="clube" required>
                     </p>
 
                     <p>
                         <label for="idade">Sua idade:</label>
-                        <input type="number" id="idade" name="idade"
-                               min="1" max="120">
+                        <input type="number" id="idade" name="idade" min="1" max="120">
                     </p>
 
                     <button type="submit" class="botao">Enviar pesquisa</button>
@@ -171,7 +169,7 @@
             </form>
         </section>
 
-    
+
         <section>
             <h2>Flamengo em campo</h2>
             <p>Confira um registro de uma partida do Flamengo, gravado diretamente das arquibancadas.</p>
@@ -179,12 +177,12 @@
             <!-- Usamos preload="metadata" para carregar apenas as informações
                  iniciais do vídeo, evitando baixar o arquivo inteiro
                  antes de o visitante clicar em reproduzir. -->
-            
-<video controls preload="metadata" width="640" poster="assets/images/flamengo-poster.jpg">
-    <source src="assets/videos/flamengo-estadio.webm" type="video/webm">
-    <source src="assets/videos/flamengo-estadio.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução deste vídeo.
-</video>
+
+            <video controls preload="metadata" width="640" poster="assets/images/flamengo-poster.jpg">
+                <source src="assets/videos/flamengo-estadio.webm" type="video/webm">
+                <source src="assets/videos/flamengo-estadio.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução deste vídeo.
+            </video>
 
 
             <p>Vídeo gravado por um torcedor, utilizado com autorização.</p>
@@ -198,9 +196,7 @@
         <p>
             Para conhecer mais sobre as competições mundiais,
             visite o
-            <a href="https://www.fifa.com/"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a href="https://www.fifa.com/" target="_blank" rel="noopener noreferrer">
                 site oficial da FIFA
             </a>.
         </p>
@@ -209,4 +205,5 @@
     </footer>
     <script src="js/grafico.js"></script>
 </body>
+
 </html>
