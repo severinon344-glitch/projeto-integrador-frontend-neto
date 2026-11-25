@@ -12,20 +12,44 @@
 <body>
 
     <header id="cabecalho-principal">
-        <h1>Gigantes do Brasil</h1>
-        <p class="destaque">
-            Conheça os clubes brasileiros com mais títulos oficiais
-            e descubra suas principais conquistas ao longo da história.
-        </p>
-        <nav aria-label="Navegação principal">
-            <ul class="menu-navegacao">
-                <li><a href="#cabecalho-principal">Início</a></li>
-                <li><a href="#clubes">Clubes</a></li>
-                <li><a href="#mundiais">Mundiais</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <h1>Gigantes do Brasil</h1>
+    <p class="destaque">
+        Conheça os clubes brasileiros com mais títulos oficiais
+        e descubra suas principais conquistas ao longo da história.
+    </p>
+</header>
+
+<nav class="navbar" aria-label="Navegação principal">
+    <a href="#cabecalho-principal" class="logo">
+    Gigantes do Brasil
+</a>
+
+    <button class="menu-hamburguer"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <ul class="menu-navegacao">
+        <li><a href="#cabecalho-principal" class="ativo">Início</a></li>
+
+        <li class="dropdown">
+            <a href="#clubes">Clubes ▾</a>
+
+            <ul class="submenu">
+                <li><a href="#flamengo">Flamengo</a></li>
+                <li><a href="#palmeiras">Palmeiras</a></li>
+                <li><a href="#sao-paulo">São Paulo</a></li>
+                <li><a href="#santos">Santos</a></li>
+                <li><a href="#corinthians">Corinthians</a></li>
             </ul>
-        </nav>
-    </header>
+        </li>
+
+        <li><a href="#mundiais">Mundiais</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
 
     <main>
 
@@ -54,11 +78,11 @@
 
 
             <ul class="grade-clubes">
-                <li>Flamengo</li>
-                <li>Palmeiras</li>
-                <li>São Paulo</li>
-                <li>Santos</li>
-                <li>Corinthians</li>
+                <li id="flamengo">Flamengo</li>
+                <li id="palmeiras">Palmeiras</li>
+                <li id="sao-paulo">São Paulo</li>
+                <li id="santos">Santos</li>
+                <li id="corinthians">Corinthians</li>
             </ul>
         </section>
 
@@ -204,6 +228,7 @@
         <p>Gigantes do Brasil — Projeto Integrador</p>
     </footer>
     <script src="js/grafico.js"></script>
+    <script src="js/navegacao.js"></script>
 </body>
 
 </html>

@@ -218,3 +218,87 @@ section .grade-clubes {
         -1px  1px 0 #000000,
          1px  1px 0 #000000;
 }
+/* Destaque do item ativo na navegação */
+.menu-navegacao a.ativo {
+    color: var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 5px;
+}
+/* Menu dropdown */
+.dropdown {
+    position: relative;
+}
+
+.menu-navegacao .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: var(--cor-primaria);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: var(--raio-borda);
+}
+
+.submenu a {
+    display: block;
+    padding: 12px;
+    text-align: left;
+}
+
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
+    display: block;
+}
+/* Barra de navegação sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--cor-primaria);
+    padding: 0.5rem 1rem;
+}
+
+.navbar .menu-navegacao {
+    margin: 0;
+}
+/* Botão de menu hambúrguer */
+.menu-hamburguer {
+    display: none;
+    background: transparent;
+    color: var(--cor-branca);
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Exibição do botão em telas menores */
+@media (max-width: 600px) {
+    .menu-hamburguer {
+        display: block;
+        margin-left: auto;
+    }
+}
+/* Alinhamento da logo e da navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar .logo {
+    color: var(--cor-secundaria);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .navbar .menu-navegacao {
+        width: 100%;
+    }
+}
