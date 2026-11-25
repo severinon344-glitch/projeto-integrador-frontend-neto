@@ -150,3 +150,71 @@ tbody tr:nth-child(even) {
     font-weight: bold;
     cursor: pointer;
 }
+/* Barra de navegação com Flexbox */
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+.menu-navegacao a:link,
+.menu-navegacao a:visited {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a:focus-visible {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+/* Grade responsiva de clubes com CSS Grid */
+section .grade-clubes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+/* Flamengo - rubro-negro */
+.grade-clubes li:nth-child(1) {
+    background: linear-gradient(90deg, #c3281e 50%, #000000 50%);
+}
+
+/* Palmeiras - alviverde */
+.grade-clubes li:nth-child(2) {
+    background: linear-gradient(90deg, #006437 50%, #ffffff 50%);
+}
+
+/* São Paulo - tricolor */
+.grade-clubes li:nth-child(3) {
+    background: linear-gradient(90deg, #ff0000 33.33%, #ffffff 33.33%, #ffffff 66.66%, #000000 66.66%);
+}
+
+/* Santos - alvinegro */
+.grade-clubes li:nth-child(4) {
+    background: linear-gradient(90deg, #ffffff 50%, #000000 50%);
+}
+
+/* Corinthians - alvinegro */
+.grade-clubes li:nth-child(5) {
+    background: linear-gradient(90deg, #000000 50%, #ffffff 50%);
+}
+.grade-clubes li {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: var(--raio-borda);
+    border: 1px solid #cccccc;
+    text-shadow:
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+}
