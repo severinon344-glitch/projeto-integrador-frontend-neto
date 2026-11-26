@@ -302,3 +302,25 @@ section .grade-clubes {
         width: 100%;
     }
 }
+/* Botão do analisador de títulos */
+#btnAnalisador {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--raio-borda);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+#btnAnalisador:hover {
+    background-color: #0e4d29;
+}
+
+#btnAnalisador:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 3px;
+}
