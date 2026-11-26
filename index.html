@@ -12,44 +12,41 @@
 <body>
 
     <header id="cabecalho-principal">
-    <h1>Gigantes do Brasil</h1>
-    <p class="destaque">
-        Conheça os clubes brasileiros com mais títulos oficiais
-        e descubra suas principais conquistas ao longo da história.
-    </p>
-</header>
+        <h1>Gigantes do Brasil</h1>
+        <p class="destaque">
+            Conheça os clubes brasileiros com mais títulos oficiais
+            e descubra suas principais conquistas ao longo da história.
+        </p>
+    </header>
 
-<nav class="navbar" aria-label="Navegação principal">
-    <a href="#cabecalho-principal" class="logo">
-    Gigantes do Brasil
-</a>
+    <nav class="navbar" aria-label="Navegação principal">
+        <a href="#cabecalho-principal" class="logo">
+            Gigantes do Brasil
+        </a>
 
-    <button class="menu-hamburguer"
-            type="button"
-            aria-label="Abrir menu de navegação"
-            aria-expanded="false">
-        ☰
-    </button>
+        <button class="menu-hamburguer" type="button" aria-label="Abrir menu de navegação" aria-expanded="false">
+            ☰
+        </button>
 
-    <ul class="menu-navegacao">
-        <li><a href="#cabecalho-principal" class="ativo">Início</a></li>
+        <ul class="menu-navegacao">
+            <li><a href="#cabecalho-principal" class="ativo">Início</a></li>
 
-        <li class="dropdown">
-            <a href="#clubes">Clubes ▾</a>
+            <li class="dropdown">
+                <a href="#clubes">Clubes ▾</a>
 
-            <ul class="submenu">
-                <li><a href="#flamengo">Flamengo</a></li>
-                <li><a href="#palmeiras">Palmeiras</a></li>
-                <li><a href="#sao-paulo">São Paulo</a></li>
-                <li><a href="#santos">Santos</a></li>
-                <li><a href="#corinthians">Corinthians</a></li>
-            </ul>
-        </li>
+                <ul class="submenu">
+                    <li><a href="#flamengo">Flamengo</a></li>
+                    <li><a href="#palmeiras">Palmeiras</a></li>
+                    <li><a href="#sao-paulo">São Paulo</a></li>
+                    <li><a href="#santos">Santos</a></li>
+                    <li><a href="#corinthians">Corinthians</a></li>
+                </ul>
+            </li>
 
-        <li><a href="#mundiais">Mundiais</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
+            <li><a href="#mundiais">Mundiais</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
     <main>
 
@@ -89,8 +86,8 @@
         <section id="mundiais">
             <h2>Clubes brasileiros campeões mundiais</h2>
             <button type="button" id="btnAnalisador">
-    Analisar títulos mundiais
-</button>
+                Analisar títulos mundiais
+            </button>
 
             <table border="1">
                 <thead>
@@ -158,7 +155,18 @@
                 </a>.
             </p>
         </section>
+        <section id="ranking" class="card">
+            <h2>Ranking de conquistas</h2>
 
+            <p>
+                Compare os títulos dos cinco clubes históricos
+                nas principais competições nacionais e internacionais.
+            </p>
+
+            <div id="resumoTitulos"></div>
+
+            <div id="resultado"></div>
+        </section>
         <section id="contato">
             <h2>Pesquisa sobre futebol brasileiro</h2>
 
@@ -233,6 +241,7 @@
     <script src="js/grafico.js"></script>
     <script src="js/navegacao.js"></script>
     <script src="js/logica.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
